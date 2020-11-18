@@ -4,7 +4,11 @@ const mongoose = require('mongoose')
 
 
 const app = express()
-const port = process.env.port || 8080
+const port = process.env.PORT || 8080
+
+app.get('/', (req, res) => {
+  res.send('Portfolio App')
+})
 
 app.use(cors())
 app.use(express.json())
