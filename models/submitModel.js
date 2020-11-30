@@ -9,5 +9,5 @@ const submitSchema = new Schema({
     message:{type:String,required:true}
 })
 
-const Submit = mongoose.model('Submit',submitSchema)
+const Submit = mongoose.model('Submits',submitSchema)
 module.exports = Submit
